@@ -38,9 +38,7 @@ class FootballResultsTest(unittest.TestCase):
 
     # Test we get right list of result strings for a list of final score dictionaries. 
 
-# if __name__ == "__main__":
-#     unittest.main()
-
-
-
+    def test_get_results(self): 
+        results_list = get_results(self.football_results1, self.football_results2, self.football_results3)
+        self.assertEqual(["away win", "home win", "draw"], results_list)
 
